@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="application/javascript" src="js/jquery-1.11.3.min.js"></script>
+  <script type="application/javascript" src="js/bootstrap.min.js"></script>
+  <script type="application/javascript" src="main.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="animate.min.css">
+  <title>Location saisonnière...</title>
+  <link rel="icon" type="image/png" href="img/airbnb.ico" />
+</head>
+
+<body>
+
+  <!--Section navbar, barre de recherche et background image -->
+  <section class="img-reponsive" id="bg">
+    <div class="container">
+      <!--début de la div container, navbar -->
+      <nav id="mainmenu" class="navbar navbar-invisible" data-spy="scroll" data-target="mainmenu">
+        <div class="container">
+          <div class="navbar-header">
+            <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#monmenu">
+              MENU
+            </button>
+            <a href="#" class="navbar-brand">
+              <img id="logo1" src="Logoair.png" alt="Logo airbnb">
+            </a>
+          </div>
+          <div class="collapse navbar-collapse navbar-right" id="monmenu">
+            <ul class="nav navbar-nav">
+              <li><a id="border" href="#">Devenez hôte</a></li>
+              <li>
+                <a href="#">Aide</a>
+              </li>
+              <li><a href="#">Inscription</a></li>
+              <li><a href="#">Connexion</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!--fin de la div container navbar -->
+    <div class="container">
+      <!--début div container -->
+
+
+
+      <!--début de la div va-middle -->
+      <div class="va-middle">
+        <h2>bienvenu à la maison</h2>
+        <h4>Louez des logements uniques auprès d'hôtes locaux dans plus de 190 pays.</h4>
+        <button class="btn btnemploi" type="button">
+          Mode d'emploi
+        </button>
+      </div>
+      <!--fin de la div va-middle -->
+
+
+
+      <!--début de la div générant la barre de recherche -->
+      <div class="hero__content-footer hide-sm">
+        <div class="searchbar">
+          <form id="searchbar-form" action="/s">
+
+            <div class="searchbar__input-wrapper">
+
+              <label class="searchbar__location">
+                <span class="screen-reader-only">
+                </span>
+                <input id="location" type="text" class="input-large input-contrast" autocomplete="off" name="location" placeholder="Où voulez-vous aller ?" />
+                <div id="searchbar-location-error" class="searchbar__location-error hide col-sm-12 col-xs-12 col-md-12 col-lg-12">
+                </div>
+              </label>
+
+              <label class="searchbar__checkin">
+                <span class="screen-reader-only">
+                </span>
+                <input id="checkin" type="text" class="checkin input-large input-contrast" name="checkin" placeholder="Arrivée" />
+              </label>
+
+              <label class="searchbar__checkout">
+                <span class="screen-reader-only">
+                </span>
+                <input id="checkout" type="text" class="checkout input-large input-contrast" name="checkout" placeholder="Départ" />
+              </label>
+
+              <label class="searchbar__guests">
+                <span class="screen-reader-only">
+                </span>
+                <div class="select select-large ">
+                  <select id="guests" name="guests">
+                    <option value="1">1 voyageur</option>
+                    <option value="2">2 voyageurs</option>
+                    <option value="3">3 voyageurs</option>
+                    <option value="4">4 voyageurs</option>
+                    <option value="5">5 voyageurs</option>
+                    <option value="6">6 voyageurs</option>
+                    <option value="7">7 voyageurs</option>
+                    <option value="8">8 voyageurs</option>
+                    <option value="9">9 voyageurs</option>
+                    <option value="10">10 voyageurs</option>
+                    <option value="11">11 voyageurs</option>
+                    <option value="12">12 voyageurs</option>
+                    <option value="13">13 voyageurs</option>
+                    <option value="14">14 voyageurs</option>
+                    <option value="15">15 voyageurs</option>
+                    <option value="16">16+ voyageurs</option>
+                  </select>
+                </div>
+              </label>
+
+              <button id="submit_location" type="submit" class="searchbar__submit btn btn-danger btn-large">
+                Rechercher
+              </button>
+
+              <input type="hidden" name="source" value="bb">
+            </div>
+            <!--fin de la div générant barre de recherche -->
+
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--fin de la section navbar, barre de recherche et background image -->
+
+
+  <!--début de la section -->
+  <section>
+    <!--début de la div générant le panel -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 pute">
+          <h3>
+            <strong>Ouvrez la porte à un voyageur et à une nouvelle vie</strong>
+          </h3>
+          <p>Gagnez de l'argent en accueillant des voyageurs.</p>
+          <button type="button" class="btn btn-primary btn-lg">Estimer mes revenus</button>
+        </div>
+
+        <div class="col-md-8">
+          <img src="img/image.png" alt="..." class="img-responsive">
+        </div>
+      </div>
+
+      <div class="row">
+        <h2 id="grey">Juste pour le week-end</h2>
+        <p>Découvrez de nouveaux logements incroyables près de chez vous.</p>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+          <img class="img-responsive" src="img/lille.png" alt="...">
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+          <img class="img-responsive" src="img/bx.png" alt="...">
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+          <img class="img-responsive" src="img/londre.png" alt="...">
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 pute1 ">
+        <button type="button" class="btn btn-default btn-lg ">Voir toutes les destinations</button>
+      </div>
+    </div>
+    <!--fin des div générant le panel -->
+
+  </section>
+  <!--fin de la section -->
+
+
+  <!--##################################### FOOTER ############################################### -->
+  <div id="footer" class="container-brand-dark footer-surround footer-container">
+    <footer class="page-container-responsive">
+      <div class="row row-condensed">
+
+        <div class="col-md-3">
+          <div class="language-curr-picker clearfix space-2">
+            <div class="language-picker"></div>
+            <div class="currency-picker"></div>
+            <div class="cx-number"></div>
+          </div>
+
+        </div>
+
+        <div class="col-md-2 ">
+          <h2 class="h5">Société</h2>
+          <ul class="list-layout">
+            <li><a href="#">À propos</a></li>
+            <li><a href="#">Carrières</a></li>
+            <li><a href="#">Presse</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Aide</a></li>
+            <li><a href="#">Règles</a></li>
+            <li><a href="#">Réponse aux catastrophes</a></li>
+            <li><a href="#">Conditions générales et confidentialité</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-2 ">
+          <h2 class="h5">Découvrir</h2>
+          <ul class="list-layout">
+            <li><a href="#">Confiance et sécurité</a></li>
+            <li><a href="#">Inviter des amis</a></li>
+            <li><a href="#">La sélection Airbnb</a></li>
+            <li><a href="#">Application mobile</a></li>
+            <li><a href="#">Soutenir New York</a></li>
+            <li><a href="#">Voyage d'affaires</a></li>
+            <li><a href="#">Plan du site</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-2 ">
+          <h2 class="h5">Hébergement</h2>
+          <ul class="list-layout">
+            <li><a href="/host">Pourquoi être hôte</a></li>
+
+            <li><a href="#">Hospitalité</a></li>
+            <li><a href="#">Hébergement responsable</a></li>
+            <li><a href="#">Sécurité à la maison</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-sm-12 ">
+        <ul class="list-layout list-inline text-center h5">
+          <li><a href="#">À propos</a></li>
+          <li><a href="#">Carrières</a></li>
+          <li><a href="#">Presse</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Conditions générales et confidentialité</a></li>
+        </ul>
+      </div>
+
+      <div class="space-top-2 text-muted">
+        &copy; Airbnb, Inc.
+      </div>
+
+    </footer>
+
+  </div>
+  <!--##################################### FIN DU FOOTER ############################################### -->
+
+</body>
+
+</html>

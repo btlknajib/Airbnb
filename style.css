@@ -1,0 +1,84 @@
+body {
+    background-color: rgb(220, 220, 220);
+}
+
+/*IMAGE DE BACKGROUND DE TOP DE LA PAGE */
+section#bg {
+    background-image: url('img/city.jpg') no-repeat center center fixed;
+    background-size: cover;
+
+}
+/*IMAGE DE BACKGROUND DE TOP DE LA PAGE */
+#bg{
+    background:url('img/city.jpg') no-repeat center center;
+    height: 500px;
+}
+/*-----------------------------------------*/
+
+h2 {
+  text-align: center;
+}
+/* CENTRAGE ET MISE EN UPPERCASE DE "BIENVENU A LA MAISON" */
+div.va-middle h2 {
+text-transform: uppercase;
+font-weight: 700;
+color: white;
+font-size: 60px;
+}
+/*-----------------------------------------*/
+p {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #565A5C;
+}
+/*-----------------------------------------*/
+h4 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+/*-----------------------------------------*/
+h3 {
+  font-weight: bold;
+  font-size: 26px;
+  color: #565A5C;
+}
+/*-----------------------------------------*/
+/*MISE EN COULEUR DU H2 "JUSTE POUR LE WEEK-END" DANS LA DIV ROW CONCERNANT LE COMMENTAIRE "PANEL" */
+#grey {
+  color: #565A5C;
+  font-weight: bold;
+  font-size: 32px;
+
+}
+.panel {
+  background-color: white;
+}
+/*-----------------------------------------*/
+
+.searchbar  {
+  text-align: center;
+}
+.btnemploi {
+  background-color: grey;
+  opacity: 0.8;
+}
+div.va-middle {
+  text-align: center;
+}
+div.col-md-4 h3 {
+  text-align: center;
+}
+/*-----------------------------------------*/
+
+.pute{
+  text-align: center;
+}
+.row { margin-top: 50px;}
+
+/*MISE EN COULEUR DES <a></a> DE LA NAVBAR*/
+#mainmenu a {
+  color: white;
+}
