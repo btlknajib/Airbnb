@@ -1,3 +1,0 @@
-# bloque l'indexation des images pour les robots
-User-agent: *
-Disallow: 
